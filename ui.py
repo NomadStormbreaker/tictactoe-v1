@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
+import random  # Add this import statement
 from game import TicTacToe
 from player import HumanPlayer, ComputerPlayer
 import requests
@@ -8,7 +9,7 @@ class TicTacToeGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Tic Tac Toe")
-        self.api_url = "http://35.175.188.29:30007"  # EC2 Public IP, FlaskAPI Node Port
+        self.api_url = "http://35.175.188.29:30007"  # Update with the actual API URL
         self.player_name = self.get_player_name()
         self.game = TicTacToe()
         self.x_player = HumanPlayer('X', self.player_name)
