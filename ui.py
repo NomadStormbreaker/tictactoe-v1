@@ -9,7 +9,7 @@ class TicTacToeGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Tic Tac Toe")
-        self.api_url = "http://35.175.188.29:30007"  # Update with the actual API URL
+        self.api_url = "http://54.234.227.196:30007"  # Update with the actual API URL
         self.player_name = self.get_player_name()
         self.game = TicTacToe()
         self.x_player = HumanPlayer('X', self.player_name)
